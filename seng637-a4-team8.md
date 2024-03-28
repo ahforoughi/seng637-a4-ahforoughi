@@ -97,13 +97,30 @@ To determine how well a test suite can identify introduced bugs, mutation testin
 
 
 # Explain your SELENUIM test case design process
+Creating test cases with Selenium involved a process akin to the exploratory testing in assignment 1. Initially, we selected a target website and identified typical user interactions, such as utilizing the search bar. With the record function, we captured the steps of performing these interactions. Once recording was complete, we executed the test case to verify its error-free operation. Subsequently, we integrated assertions and checkpoints between commands to validate the accuracy of the test results.
 
 # Explain the use of assertions and checkpoints
+Assertions and checkpoints are essential in ensuring the correctness of a test case. They verify that specific GUI elements match their expected values. For instance, in a search test case, an assertion could confirm that the search query is correct and that the website's response is as anticipated. If an assertion fails, the Selenium test suite highlights the error, making it easier to pinpoint the issue.
 
 # how did you test each functionaity with different test data
+A generic test case was constructed without specifying any value parameters. These parameters could be entered at different stages of the recorded test case. Subsequently, duplicates of this test case were created, with distinct values assigned to each. By varying the values within the instructions for each test case, we could comprehensively evaluate a functionality using diverse test data.
+
 
 # How the team work/effort was divided and managed
+All tests were conducted collaboratively, with all team members present simultaneously. For report writing, tasks were divided to ensure equal workload distribution, considering the manageable and quantifiable nature of the assignment with distinct tasks. This approach provided equal learning opportunities for each team member while minimizing individual workload. Collaboration was facilitated through GitHub and in-person meetings.
 
 # Difficulties encountered, challenges overcome, and lessons learned
+We encountered challenges with the tools for measuring mutation coverage metrics. While some tools were straightforward and easy to use, others had limited features. Killing some of the surviving mutants was particularly daunting. However, through discussions and reviewing course materials, we were able to overcome these difficulties.
 
 # Comments/feedback on the assignment itself
+The lab offered a valuable opportunity to engage with coverage tools, enhancing our practical understanding of the concepts discussed in class. However, there were areas for improvement:
+
+1. **Clarity of Instructions:** Some instructions were overly generalized, leading to ambiguity in the expected outcomes. Providing more detailed steps or examples would help clarify the objectives.
+
+2. **Validity of Resources:** The presence of invalid image links in the assignment description was a significant hindrance. Ensuring that all resources and links are functional and up-to-date would greatly enhance the learning experience.
+
+3. **Support Materials:** While the lab exposed us to coverage tools, additional resources or tutorials on how to effectively utilize these tools would be beneficial, especially for beginners.
+
+4. **Feedback Mechanism:** Incorporating a feedback mechanism where students can ask questions or clarify doubts during the lab would help address any uncertainties in real-time.
+
+Overall, the lab was a helpful experience in understanding coverage tools, but addressing these issues would make it even more effective and engaging for students.
