@@ -1,0 +1,600 @@
+{
+  "id": "7302d67e-84d5-4b07-b80a-b3187d8d89a2",
+  "version": "2.0",
+  "name": "seng-shopcanda",
+  "url": "https://www.shopsmartcanada.com/",
+  "tests": [{
+    "id": "856d802a-bd7a-4934-b103-f4a843b97cf3",
+    "name": "test-sreach-with-our-input-with-valid",
+    "commands": [{
+      "id": "648bd995-c377-420c-9a44-df117f798f1a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shopsmartcanada.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36b86017-b508-488a-b6b8-3313f65e6587",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e61c32ce-6e42-4488-a4cd-44239095033d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='q'])[2]", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[2]/div/div[3]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "909ab542-d16d-4818-b2db-4eec7e26a11e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='q'])[2]", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[2]/div/div[3]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": "hammer"
+    }, {
+      "id": "c95a8b91-8bc6-4431-919b-071c40b3aa84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[2]/div/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9eb21cb1-1ab8-48cb-9467-d1cde9185050",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//section[@id='page-search']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adf64b97-09fe-4bb3-9e15-0a70b82f21e9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//section[@id='page-search']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "45 Results For \"hammer\""
+    }, {
+      "id": "42747291-7f91-49ce-b82f-488345387f8d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "969c22ab-f1f2-42ce-91bf-b291422725c8",
+    "name": "test-search-website-function-with-null-value",
+    "commands": [{
+      "id": "afeba310-410c-41a9-a0a1-9449de714177",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shopsmartcanada.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f247e01-78ce-4415-adc4-5aa7c60553d9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aeff030e-f995-4971-af51-85c442e07340",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[2]/div/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "330f81bd-9dfc-4810-9fe5-dba80c3f9731",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//section[@id='page-search']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b465b11-4b05-4a9a-bdde-8aaccac8e74c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//section[@id='page-search']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Search Our Site"
+    }, {
+      "id": "840f5d76-3bc0-4115-bd48-0b2730f9313b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7aeedae6-0486-41bf-918f-087fa3ca9804",
+    "name": "test-menu",
+    "commands": [{
+      "id": "b7bbae58-4474-46e4-9836-27661a0def98",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shopsmartcanada.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88b3a17e-3ed0-48a5-aa52-b0df8acae86a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "611cb41f-26ed-46dd-93da-9176b6133bf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ss_menu_lv1:nth-child(2) .ss_megamenu_title",
+      "targets": [
+        ["css=.ss_menu_lv1:nth-child(2) .ss_megamenu_title", "css:finder"],
+        ["xpath=//div[@id='shopify-section-ss-mainmenu']/div/nav/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14bf524c-8cae-434a-8327-30ac469fceeb",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.ss_menu_lv1:nth-child(2) .ss_megamenu_title",
+      "targets": [
+        ["css=.ss_menu_lv1:nth-child(2) .ss_megamenu_title", "css:finder"],
+        ["xpath=//div[@id='shopify-section-ss-mainmenu']/div/nav/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "556b367c-6b0d-4eea-9af4-c1fdb707000b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.collection-tille",
+      "targets": [
+        ["css=.collection-tille", "css:finder"],
+        ["xpath=//div[@id='shopify-section-collection-infos']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9587fa7-2c6f-47cf-a5bf-c4194c1b554a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.collection-tille",
+      "targets": [
+        ["css=.collection-tille", "css:finder"],
+        ["xpath=//div[@id='shopify-section-collection-infos']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "AUTOMOTIVE & TIRES"
+    }, {
+      "id": "c4a95ed8-0426-4e60-803b-3da17d62536b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5e33c7c4-b1b6-4229-9ca8-49099c62a273",
+    "name": "test-menu-where-is-my-order",
+    "commands": [{
+      "id": "79852c50-33e6-49a6-a655-bf19ed303b1c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shopsmartcanada.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "011a67d4-cfb6-4afa-bc10-9d0479759f0b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37cbf294-0158-4f51-8dfa-ccea7e3df3a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tracking Orders",
+      "targets": [
+        ["linkText=Tracking Orders", "linkText"],
+        ["css=.item-order > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Tracking Orders')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div/div/div/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pages/where-is-my-order')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tracking Orders')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c7c9569-2cef-4684-80a8-e124ce80e4ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b70a5fc6-268b-4c9d-972f-9d6a1f178a15",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "WHERE IS MY ORDER?"
+    }, {
+      "id": "0a980eb4-bf3f-4304-892d-63c1a73f783e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0185f204-d34b-4bbf-893f-577f5cae450b",
+    "name": "test-menu-fandq",
+    "commands": [{
+      "id": "b0becdeb-f8fe-4e04-8728-33f867530563",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shopsmartcanada.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd9c169d-09d7-434b-b71d-32c0a3a33516",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ba82fd7-2c15-432b-9fcd-ef14a94c24e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=FAQs",
+      "targets": [
+        ["linkText=FAQs", "linkText"],
+        ["css=.item-faq > a", "css:finder"],
+        ["xpath=//a[contains(text(),'FAQs')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div/div/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pages/return-policy-faqs')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'FAQs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f10d8039-339a-4cd6-a3cc-93a46c9bfd47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa46a7ce-43f5-4d62-87a8-3494ee1d5f8c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "RETURN POLICY FAQS"
+    }, {
+      "id": "9b2c43ca-93a0-4799-8c7a-b75c5ad34791",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1b09d2d2-81b0-4214-8a17-46e1fdf926f4",
+    "name": "test-forget-test",
+    "commands": [{
+      "id": "806592f2-155d-4c91-a5d3-3650330cd9de",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shopsmartcanada.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adf11be8-0d7a-49b2-8b22-e51fe626378e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f06d04d-2e99-4c35-88e2-40fe0703d7b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.account-right > .customer_login_link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login')])[2]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/account/login')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d09032-545f-4434-a692-d40a0cef0cc6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Forgot your password?",
+      "targets": [
+        ["linkText=Forgot your password?", "linkText"],
+        ["css=.link-color", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot your password?')]", "xpath:link"],
+        ["xpath=//a[@onclick='showRecoverPasswordForm();return false;']", "xpath:attributes"],
+        ["xpath=//form[@id='customer_login']/p/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[13]", "xpath:href"],
+        ["xpath=//form/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot your password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54548f40-4524-4858-a138-434c959df9f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot your password?",
+      "targets": [
+        ["linkText=Forgot your password?", "linkText"],
+        ["css=.link-color", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot your password?')]", "xpath:link"],
+        ["xpath=//a[@onclick='showRecoverPasswordForm();return false;']", "xpath:attributes"],
+        ["xpath=//form[@id='customer_login']/p/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[13]", "xpath:href"],
+        ["xpath=//form/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot your password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eda08d9a-ba66-4d2f-a101-39d9782ca4b2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.link-color",
+      "targets": [
+        ["css=.link-color", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot your password?')]", "xpath:link"],
+        ["xpath=//a[@onclick='showRecoverPasswordForm();return false;']", "xpath:attributes"],
+        ["xpath=//form[@id='customer_login']/p/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[13]", "xpath:href"],
+        ["xpath=//form/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot your password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "925d2f40-4a35-42e1-9a00-617791c6684d",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.col-12:nth-child(1) > .formaccount",
+      "targets": [
+        ["css=.col-12:nth-child(1) > .formaccount", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[4]/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5416ad8-e771-4e4d-820d-b3637fe3e758",
+      "comment": "",
+      "command": "click",
+      "target": "css=#recover-password .page-title",
+      "targets": [
+        ["css=#recover-password .page-title", "css:finder"],
+        ["xpath=//div[@id='recover-password']/div/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a2b07fd-7550-438a-b19d-c631de03293f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#recover-password .page-title",
+      "targets": [
+        ["css=#recover-password .page-title", "css:finder"],
+        ["xpath=//div[@id='recover-password']/div/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h1", "xpath:position"]
+      ],
+      "value": "RESET YOUR PASSWORD"
+    }, {
+      "id": "17894c4b-0f2a-4ca3-883b-c550757a4972",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0cfaefdf-d729-4512-a433-4d706ae07391",
+    "name": "test-side-bar-menu",
+    "commands": [{
+      "id": "b5e91721-5e24-49c7-9eaa-309217eec908",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shopsmartcanada.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0a66052-bbcd-45f0-83d4-e8017431e6f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c594fde-c7c3-4955-90cf-95a88ef7c72f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sticky-myaccount > .material-icons",
+      "targets": [
+        ["css=.sticky-myaccount > .material-icons", "css:finder"],
+        ["xpath=//div[@id='so-groups']/a[3]/i", "xpath:idRelative"],
+        ["xpath=//div/a[3]/i", "xpath:position"],
+        ["xpath=//i[contains(.,'supervisor_account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08e5461e-41e9-4c25-85af-1cbc082bdb97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) .material-icons",
+      "targets": [
+        ["css=.col:nth-child(1) .material-icons", "css:finder"],
+        ["xpath=//div[@id='popup-myaccount']/div/div/div/div/div[2]/div/div/div/div/a/span/i", "xpath:idRelative"],
+        ["xpath=//div/a/span/i", "xpath:position"],
+        ["xpath=//i[contains(.,'history')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "590bee8f-c36a-4d5c-a66c-b7dcad995eb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#login > .page-title",
+      "targets": [
+        ["css=#login > .page-title", "css:finder"],
+        ["xpath=//div[@id='login']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "949e4111-33fb-48b8-8ec0-5248869cdccb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#login > .page-title",
+      "targets": [
+        ["css=#login > .page-title", "css:finder"],
+        ["xpath=//div[@id='login']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "SIGN IN"
+    }, {
+      "id": "1aebb439-d12d-40db-8e7e-4e3d20a29a1e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "124faf7c-141a-4a00-a21b-11c042cecb17",
+    "name": "test-my-card",
+    "commands": [{
+      "id": "e7d843c4-c754-4f1c-b4fc-c7c8cae059b9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shopsmartcanada.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebc63c9b-6b90-4b7d-9b7c-8af66ef4f8be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1312x758",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "477aff07-f50a-4187-8b74-a34171f7f98e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title-cart",
+      "targets": [
+        ["css=.title-cart", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[2]/div/div/a/span/span/span", "xpath:idRelative"],
+        ["xpath=//a/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca6ff4cc-5b8d-4c99-8686-fdc750538750",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart_empty",
+      "targets": [
+        ["css=.cart_empty", "css:finder"],
+        ["xpath=//div[@id='content']/div/p", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab8c24b8-b606-409f-8605-b3daef9769ab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cart_empty",
+      "targets": [
+        ["css=.cart_empty", "css:finder"],
+        ["xpath=//div[@id='content']/div/p", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/p", "xpath:position"]
+      ],
+      "value": "YOUR CART IS CURRENTLY EMPTY."
+    }, {
+      "id": "b81c5750-8c43-471d-b7a6-958761c39276",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d99f20e8-ce9f-4519-88d7-dd46d29b9da1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.shopsmartcanada.com/"],
+  "plugins": []
+}
